@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" data-title-en="Isaac · personal page" data-title-es="Isaac · página personal">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Isaac · personal page</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  /* aplicar tema e idioma pa q no parpadeen las cosillas */
+  try {
+    if (localStorage.getItem('isaacTheme') === 'dark') document.documentElement.classList.add('dark');
+    if (localStorage.getItem('isaacLang') === 'es') document.documentElement.setAttribute('lang', 'es');
+  } catch (e) {}
+</script>
+</head>
+<body id="top">
+<!--Logré hacer el inglés el default?? (Sí)-->
+<div class="page">
+  <header class="topbar">
+    <nav class="nav" aria-label="Navigation">
+      <a href="#about" data-en="About me" data-es="Sobre mí">About me</a>
+      <a href="#interests" data-en="Interests" data-es="Intereses">Interests</a>
+      <a href="#listen" data-en="Listening" data-es="Escuchando">Listening</a>
+      <a href="#links" data-en="Links" data-es="Enlaces">Links</a>
+      <a href="sobre-mi.html" data-en="A bit more" data-es="Un poquito más">A bit more</a>
+      <a href="amigos.html" data-en="My friends" data-es="Mis amigos">My friends</a>
+    </nav>
+    <div class="controls">
+      <button class="lang" id="langToggle" type="button">Español</button>
+      <button class="theme" id="themeToggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+  </header>
+  <section class="hero">
+    <!-- CAMBIAR SRC!!!! -->
+    <figure class="photo f-r" style="--rot:3.5deg; --w:224px">
+      <img src="https://images.artfight.net/character/qcML8L5iNkaEZDLqDpkgTATFYPEJU2xKuBWuypHFHhxQCgd1OkRj7T2qyFsN.png?t=1783007023" alt="Photo">
+      <figcaption data-en="Art by zemeralz on Artfight" data-es="Dibujo hecho por zemeralz en Artfight">Photo caption</figcaption>
+    </figure>
+    <h1><span data-en="Hi, I'm" data-es="Me llamo">Hi, I'm</span> <em>Isaac</em>.</h1>
+    <p class="lede" data-en="I use this sort of website to introduce me around to people who don't know me / want to get me to know better" data-es="Uso este tipo de páginas para presentarme a la gente que no me conoce o que quiere conocerme mejor">I use this sort of website to introduce me around to people who don't know me / want to get me to know better</p>
+    <p class="hero-actions">
+      <a href="#about" data-en="About this page" data-es="Sobre esta página">About this page</a>
+      <a href="sobre-mi.html" data-en="A bit more about me" data-es="Un poquito más sobre mí">A bit more about me</a>
+      <a href="amigos.html" data-en="My friends" data-es="Mis amigos">My friends</a>
+    </p>
+  </section>
+  <main class="flow">
+    <section id="about">
+      <h2 class="hand-title" data-en="About me" data-es="Sobre mí">About me</h2>
+      <figure class="photo f-r" style="--rot:-2.5deg; --w:212px">
+        <img src="img/carricoche.png" alt="Photo">
+        <figcaption data-en="My car from Rocket League" data-es="Mi coche de Rocket League">I'm going crazy</figcaption>
+      </figure>
+      <p data-en="I'm studying to become a fullstack web developer and I like learning by building things: web pages, small programs and projects that grow as they go. Away from code, I'm usually playing something, watching some football/soccer or socializing" data-es="Estoy estudiando para ser desarrollador web fullstack y me gusta aprender creando cosas: páginas web, pequeños programas y proyectos que van creciendo sobre la marcha. Fuera del código, normalmente estoy jugando a algo, viendo algún partido de fútbol o socializando">I'm studying to become a fullstack web developer and I like learning by building things: web pages, small programs and projects that grow as they go. Away from code, I'm usually playing something, watching some football/soccer or writing</p>
+      <p><span data-en="I keep this page " data-es="Llevo esta página ">I keep this page </span><mark data-en="My way" data-es="A mi manera">My way</mark><span data-en=", with no rush and changing it whenever I feel like it." data-es=", sin prisa y cambiándola cada vez que me apetece.">, with no rush and changing it whenever I feel like it.</span></p>
+    </section>
+
+    <section id="interests">
+      <span class="doodle doodle-note" aria-hidden="true" data-en="Here are the things I'm hooked on right now" data-es="Aquí van las cosas que me tienen enganchado ahora">Here are the things I'm hooked on right now</span>
+      <h2 class="hand-title" data-en="What interests me" data-es="Me interesa">What interests me</h2>
+      <figure class="photo f-l" style="--rot:2deg; --w:196px">
+        <img src="img/minecraft_experience.png" alt="Photo">
+        <figcaption data-en="The Minecraft experience" data-es="La experiencia de Minecraft">The Minecraft experience</figcaption>
+      </figure>
+      <ul class="loose">
+        <li><b data-en="Programming" data-es="Programación">Programming</b><span data-en="Webs and personal projects" data-es="Webs y proyectos personales">Webs and personal projects</span></li>
+        <li><b data-en="Video games" data-es="Videojuegos">Video games</b><span data-en="Rocket League, TETR.IO, Geometry Dash..." data-es="Rocket League, TETR.IO, Geometry Dash...">Rocket League, TETR.IO, Geometry Dash...</span></li>
+        <li><b data-en="Football" data-es="Fútbol">Football</b><span data-en="I mostly support my local team with all my heart" data-es="Apoyo al equipo de mi ciudad con todo">I mostly support my local team with all my heart</span></li>
+        <li><b data-en="Writing" data-es="Escritura">Writing</b><span data-en="Not much, but when I'm inspired I won't stop" data-es="No mucho, hasta que me inspiro y no paro">Not much, but when I'm inspired I won't stop</span></li>
+        <li><b data-en="Music" data-es="Música">Music</b><span data-en="Techno and others, I don't really know how to define my music taste" data-es="Música tecno y otras, la verdad es que no tengo ni idea de cómo definir mi gusto musical">Techno and others, I don't really know how to define my music taste</span></li>
+      </ul>
+    </section>
+
+    <section id="listen">
+      <h2 class="hand-title" data-en="Listening to" data-es="Escuchando">Listening to</h2>
+      <!-- reproductor infernal de musica de mierda -->
+      <!-- CAMBIA EL src DEL iframe: pon https://open.spotify.com/embed/track/ Y EL ID DE TU CANCIÓN (en Spotify: compartir la canción y copia el link) -->
+      <div class="embed">
+        <iframe src="https://open.spotify.com/embed/track/1DUA8KW4Fes6qfSlNJqvwj?si=1800c55b4af44012" width="100%" height="152" frameborder="0" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen title="Spotify"></iframe>
+      </div>
+    </section>
+
+    <section id="links">
+      <h2 class="hand-title" data-en="Links" data-es="Enlaces">Links</h2>
+      <ul class="links">
+        <li><a href="https://github.com/IsaacLJ1204" data-placeholder data-en="GitHub" data-es="GitHub">GitHub</a></li>
+        <li><a href="https://www.instagram.com/isaaclj_07" data-placeholder data-en="Instagram" data-es="Instagram">ig</a></li>
+        <li><a href="https://www.chess.com/member/toiweon" data-placeholder data-en="chess.com" data-es="chess.com">chess.com</a></li>
+        <li><a href="#" data-placeholder data-en="Discord: elinactivo3.0" data-es="Discord: elinactivo3.0">Another profile</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <a href="#top" data-en="Back to top" data-es="Volver arriba">Back to top</a>
+  </footer>
+
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

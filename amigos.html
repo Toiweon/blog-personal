@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" data-title-en="My friends" data-title-es="Mis amigos">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My friends</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  /* aplica tema e idioma guardados antes de pintar, para que no parpadee */
+  try {
+    if (localStorage.getItem('isaacTheme') === 'dark') document.documentElement.classList.add('dark');
+    if (localStorage.getItem('isaacLang') === 'es') document.documentElement.setAttribute('lang', 'es');
+  } catch (e) {}
+</script>
+</head>
+<body id="top">
+<div class="page">
+
+  <header class="topbar">
+    <nav class="nav" aria-label="Navigation">
+      <a href="index.html" data-en="Home" data-es="Atrás">Home</a>
+      <a href="index.html#about" data-en="About me" data-es="Sobre mí">About me</a>
+      <a href="sobre-mi.html" data-en="A bit more" data-es="Un poquito más">A bit more</a>
+      <a href="index.html#interests" data-en="Interests" data-es="Intereses">Interests</a>
+      <a href="index.html#links" data-en="Links" data-es="Enlaces">Links</a>
+    </nav>
+    <div class="controls">
+      <button class="lang" id="langToggle" type="button">Español</button>
+      <button class="theme" id="themeToggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+  </header>
+
+  <main class="flow">
+    <section>
+      <h2 class="hand-title" data-en="My friends" data-es="Mis amigos">My friends</h2>
+      <p class="note" data-en="People who make life a little easier, click on them to access their social media" data-es="Gente que merece la pena, hazle click para acceder a sus redes sociales">People who made life a little easier, click on them to access their social media</p>
+
+      <div class="friends">
+
+        <div class="friend" style="--c:#009B7D; --rot:-1.2deg">
+          <img src="img/mit.png" alt="Friend photo">
+          <h3 data-en="Mitsu" data-es="Mitsu">Mirsu</h3>
+          <p data-en="Untentionally funny but confusing at the same time" data-es="Graciosa inintencionadamente pero también misteriosa">oka</p>
+        </div>
+
+        <div class="friend" style="--c:#9A6B6B; --rot:1.4deg">
+          <img src="img/nah.png" alt="Friend photo">
+          <h3 data-en="Nahia" data-es="Nahia">Name</h3>
+          <p data-en="Hola chicos adiós chicos" data-es="Hola chicos adiós chicos"></p>
+        </div>
+
+        <div class="friend" style="--c:#C22E2E; --rot:-0.8deg">
+          <img src="img/eka.png" alt="Friend photo">
+          <h3 data-en="Ekain" data-es="Ekain">AKAAAIN</h3>
+          <p data-en="I likes playing doubles with him in SSBU" data-es="Me gusta jugar 2vs2 en SSBU con él"></p>
+        </div>
+
+        <div class="friend" style="--c:#3E97DC; --rot:1.1deg">
+          <img src="img/alv.png" alt="Friend photo">
+          <h3 data-en="Alvaro" data-es="Álvaro">Alvaro</h3>
+          <p data-en="Very funny and outgoing, likes singing" data-es="Gracioso y extrovertido, le gusta cantar">.</p>
+        </div>
+
+        <div class="friend" style="--c:#88221D; --rot:-1.4deg">
+          <img src="img/raf.png" alt="Friend photo">
+          <h3 data-en="Rafa" data-es="Rafa">Rafael</h3>
+          <p data-en="Reserved and kinda introvert, makes beautiful art" data-es="Reservado y un poco introvertido, hace arte muy bonito"></p>
+        </div>
+
+        <div class="friend" style="--c:#6D8D53; --rot:0.9deg">
+          <img src="img/pau.png" alt="Friend photo">
+          <h3 data-en="Paula" data-es="Paula">Paula</h3>
+          <p data-en="Ignore her picture, her character is strange. Cheerful, shouts a lot but it's funny" data-es="Ignora su foto, su personaje es un poco raro. Risueña, grita a menudo pero es gracioso"></p>
+        </div>
+
+        <div class="friend" style="--c:#A622A6; --rot:0.9deg">
+          <img src="img/ale.png" alt="Friend photo">
+          <h3 data-en="Alex" data-es="Álex">Alex</h3>
+          <p data-en="Supportive and nice to be with, R.E.P.O goat" data-es="Comprensivo y se está bien con él, es el goat del R.E.P.O"></p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="index.html" data-en="Back to home" data-es="Volver al inicio">Back to home</a>
+  </footer>
+
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
