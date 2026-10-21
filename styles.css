@@ -97,6 +97,11 @@ h1 em { font-style: italic; color: var(--accent); }
 .f-r { float: right; margin: 6px -66px 26px 34px; }
 .f-l { float: left;  margin: 6px 34px 26px -66px; }
 
+/* "what interests me": foto colgada a la izquierda, texto a su derecha --- */
+.interests-row { display: flex; align-items: flex-start; gap: 46px; }
+.interests-row .photo { flex: 0 0 auto; margin: 6px 0 0 -66px; }
+.interests-row .text { flex: 1 1 0; min-width: 0; }
+
 /* títulos a mano y texto ------------------------------------------------ */
 .flow > section { display: flow-root; margin: 0 0 30px; padding-top: 30px; }
 .hand-title {
@@ -223,12 +228,15 @@ h1 em { font-style: italic; color: var(--accent); }
 @media (max-width: 1040px) {
   .f-r { margin-right: -16px; }
   .f-l { margin-left: -16px; }
+  .interests-row .photo { margin-left: -16px; }
 }
 @media (max-width: 780px) {
   .f-r, .f-l { float: none; margin: 22px auto; }
   .photo { --w: 100%; max-width: 320px; }
   .row, .row.flip { flex-direction: column; align-items: stretch; gap: 20px; }
   .row .photo { --w: 100%; max-width: 340px; margin-inline: auto; }
+  .interests-row { flex-direction: column; align-items: stretch; gap: 22px; }
+  .interests-row .photo { margin: 0 auto; }
   .friends { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) {

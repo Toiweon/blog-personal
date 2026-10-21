@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-title-en="Isaac · personal page" data-title-es="Isaac · página personal">
+<html lang="en" data-title-en="IsaacPage" data-title-es="IsaacPage">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,25 +59,27 @@
     </section>
 
     <section id="interests">
-      <span class="doodle doodle-note" aria-hidden="true" data-en="Here are the things I'm hooked on right now" data-es="Aquí van las cosas que me tienen enganchado ahora">Here are the things I'm hooked on right now</span>
-      <h2 class="hand-title" data-en="What interests me" data-es="Me interesa">What interests me</h2>
-      <figure class="photo f-l" style="--rot:2deg; --w:196px">
-        <img src="img/minecraft_experience.png" alt="Photo">
-        <figcaption data-en="The Minecraft experience" data-es="La experiencia de Minecraft">The Minecraft experience</figcaption>
-      </figure>
-      <ul class="loose">
-        <li><b data-en="Programming" data-es="Programación">Programming</b><span data-en="Webs and personal projects" data-es="Webs y proyectos personales">Webs and personal projects</span></li>
-        <li><b data-en="Video games" data-es="Videojuegos">Video games</b><span data-en="Rocket League, TETR.IO, Geometry Dash..." data-es="Rocket League, TETR.IO, Geometry Dash...">Rocket League, TETR.IO, Geometry Dash...</span></li>
-        <li><b data-en="Football" data-es="Fútbol">Football</b><span data-en="I mostly support my local team with all my heart" data-es="Apoyo al equipo de mi ciudad con todo">I mostly support my local team with all my heart</span></li>
-        <li><b data-en="Writing" data-es="Escritura">Writing</b><span data-en="Not much, but when I'm inspired I won't stop" data-es="No mucho, hasta que me inspiro y no paro">Not much, but when I'm inspired I won't stop</span></li>
-        <li><b data-en="Music" data-es="Música">Music</b><span data-en="Techno and others, I don't really know how to define my music taste" data-es="Música tecno y otras, la verdad es que no tengo ni idea de cómo definir mi gusto musical">Techno and others, I don't really know how to define my music taste</span></li>
-      </ul>
+      <div class="interests-row">
+        <figure class="photo" style="--rot:2deg; --w:196px">
+          <img src="img/minecraft_experience.png" alt="Photo">
+          <figcaption data-en="The Minecraft experience" data-es="La experiencia de Minecraft">The Minecraft experience</figcaption>
+        </figure>
+        <div class="text">
+          <h2 class="hand-title" data-en="What interests me" data-es="Me interesa">What interests me</h2>
+          <ul class="loose">
+            <li><b data-en="Programming" data-es="Programación">Programming</b><span data-en="Webs and personal projects" data-es="Webs y proyectos personales">Webs and personal projects</span></li>
+            <li><b data-en="Video games" data-es="Videojuegos">Video games</b><span data-en="Rocket League, TETR.IO, Geometry Dash..." data-es="Rocket League, TETR.IO, Geometry Dash...">Rocket League, TETR.IO, Geometry Dash...</span></li>
+            <li><b data-en="Football" data-es="Fútbol">Football</b><span data-en="I mostly support my local team with all my heart" data-es="Apoyo al equipo de mi ciudad con todo">I mostly support my local team with all my heart</span></li>
+            <li><b data-en="Writing" data-es="Escritura">Writing</b><span data-en="Not much, but when I'm inspired I won't stop" data-es="No mucho, hasta que me inspiro y no paro">Not much, but when I'm inspired I won't stop</span></li>
+            <li><b data-en="Music" data-es="Música">Music</b><span data-en="Techno and others, I don't really know how to define my music taste" data-es="Música tecno y otras, la verdad es que no tengo ni idea de cómo definir mi gusto musical">Techno and others, I don't really know how to define my music taste</span></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section id="listen">
       <h2 class="hand-title" data-en="Listening to" data-es="Escuchando">Listening to</h2>
       <!-- reproductor infernal de musica de mierda -->
-      <!-- CAMBIA EL src DEL iframe: pon https://open.spotify.com/embed/track/ Y EL ID DE TU CANCIÓN (en Spotify: compartir la canción y copia el link) -->
       <div class="embed">
         <iframe src="https://open.spotify.com/embed/track/1DUA8KW4Fes6qfSlNJqvwj?si=1800c55b4af44012" width="100%" height="152" frameborder="0" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen title="Spotify"></iframe>
       </div>
@@ -89,7 +91,7 @@
         <li><a href="https://github.com/IsaacLJ1204" data-placeholder data-en="GitHub" data-es="GitHub">GitHub</a></li>
         <li><a href="https://www.instagram.com/isaaclj_07" data-placeholder data-en="Instagram" data-es="Instagram">ig</a></li>
         <li><a href="https://www.chess.com/member/toiweon" data-placeholder data-en="chess.com" data-es="chess.com">chess.com</a></li>
-        <li><a href="#" data-placeholder data-en="Discord: elinactivo3.0" data-es="Discord: elinactivo3.0">Another profile</a></li>
+        <li><a data-placeholder data-en="Discord: elinactivo3.0" data-es="Discord: elinactivo3.0">Discooorr</a></li>
       </ul>
     </section>
 
@@ -97,6 +99,7 @@
 
   <footer class="footer">
     <a href="#top" data-en="Back to top" data-es="Volver arriba">Back to top</a>
+    <span class="version">v1.1</span>
   </footer>
 
 </div>
